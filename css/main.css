@@ -30,7 +30,7 @@ html, body {
 }
 
 .img {
-    background-image: url(/images/image-header-desktop.jpg);
+    background-image: url(/yahya/HTML-CSS-JS/github-projects-done/stats-preview-card/images/image-header-desktop.jpg);
     background-size:cover ;
     position: absolute;
     right: 0;
@@ -102,7 +102,7 @@ h1 span {
         left: calc(50px/2);
     }
     .img {
-        background-image: url(/images/image-header-mobile.jpg);
+        background-image: url(/yahya/HTML-CSS-JS/github-projects-done/stats-preview-card/images/image-header-mobile.jpg);
         background-size:cover ;
         position: absolute;
         right: 0;
