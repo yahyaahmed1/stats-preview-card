@@ -1,153 +1,159 @@
 .attribution {
-    position: absolute;
-    font-size: 11px;
-    text-align: center;
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-
-html, body {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    background-color:hsl(233, 47%, 7%);
-    color: white;
-    height: 100%;
-    width: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  height: 100%;
+  width: 100%;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .box {
-    position: relative;
-    width: 1000px;
-    height: 450px;
-    border-radius: 10px;
-    background-color: hsl(244, 38%, 16%);
-    left: 220px;
-    top: 175px;
+  position: relative;
+  width: 1000px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+  left: 220px;
+  top: 175px;
 }
 
-.img {
-    background-image: url(/yahya/HTML-CSS-JS/github-projects-done/stats-preview-card/images/image-header-desktop.jpg);
-    background-size:cover ;
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    border-radius: 0 10px 10px 0;
+img {
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 10px 10px 0;
 }
 
 .overlay {
-    background: rgb(80 44 100);
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    border-radius: 0 10px 10px 0;
-    filter: opacity(.5) saturate(3.5) brightness(.8);
+  background: hsl(277, 64%, 61%);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+  mix-blend-mode: multiply;
+  opacity: 80%;
 }
 
 .details-part {
-    width: 40%;
-    padding: 30px 0px 50px 50px;
+  width: 40%;
+  padding: 30px 0px 50px 50px;
 }
 
 .heading {
-    font-size: 33px;
+  font-size: 33px;
 }
 
 h1 span {
-    color: hsl(277, 64%, 61%);
+  color: hsl(277, 64%, 61%);
 }
 
 .description {
-    padding: 10px 15px 50px 15px;
-    color: hsla(0, 0%, 100%, 0.75);
-    line-height: 30px;
-    width: 390px;
+  padding: 10px 15px 50px 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 30px;
+  width: 390px;
 }
 
 .last-part {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    line-height: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  line-height: 13px;
 }
 
 .last-part div h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .last-part div span {
-    color: hsla(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 @media (min-width: 1440px) {
-    .attribution {
-        bottom: 0;
-        left: 572px;
-    }
+  .attribution {
+    bottom: 0;
+    left: 572px;
+  }
 }
 
 @media (max-width: 375px) {
-    .box {
-        position: relative;
-        width: 325px;
-        height: 900px;
-        top: calc(56px/2);
-        left: calc(50px/2);
-    }
-    .img {
-        background-image: url(/yahya/HTML-CSS-JS/github-projects-done/stats-preview-card/images/image-header-mobile.jpg);
-        background-size:cover ;
-        position: absolute;
-        right: 0;
-        height: 30%;
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-    }
-    .overlay {
-        height: 30%;
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-    }
-    /* .details-part {
+  .box {
+    position: relative;
+    width: 325px;
+    height: 900px;
+    top: calc(56px / 2);
+    left: calc(50px / 2);
+  }
+  .img {
+    background-image: url(/yahya/HTML-CSS-JS/github-projects-done/stats-preview-card/images/image-header-mobile.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    height: 30%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .overlay {
+    height: 30%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  /* .details-part {
         width: 40%;
         padding: 50px;
     } */
-    .details-part .heading {
-        position: absolute;
-        top: 32%;
-        text-align: center;
-        font-size: 30px;
-        left: 15px;
-    }
-    .description {
-        position: absolute;
-        top: 48%;
-        text-align: center;
-        font-size: 16px;
-        line-height: 30px;
-        left: 5px;
-        width: 320px;
-    }
-    .last-part {
-        display: block;
-        position: absolute;
-        top: 65%;
-        text-align: center;
-        left: 117px
-    }
-    .last-part div {
-        padding-bottom: 35px;
-    }
-    .attribution {
-        position: absolute;
-        bottom: 0;
-        left: calc(85px/ 2);
-    }
+  .details-part .heading {
+    position: absolute;
+    top: 32%;
+    text-align: center;
+    font-size: 30px;
+    left: 15px;
+  }
+  .description {
+    position: absolute;
+    top: 48%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    left: 5px;
+    width: 320px;
+  }
+  .last-part {
+    display: block;
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    left: 117px;
+  }
+  .last-part div {
+    padding-bottom: 35px;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: calc(85px / 2);
+  }
 }
